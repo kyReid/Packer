@@ -60,11 +60,11 @@ Run script
 
 #### Usage
 
-**Help Display**
+> **Help Display**
 
 ![Help](images/help.png)
 
-**Outcome Display**
+> **Outcome Display**
 
 ![in Action](images/tool-in-action.png)
 
