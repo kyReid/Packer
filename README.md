@@ -30,6 +30,13 @@ to better understand the importance of security. This Tool was designed for lear
 - Pipenv
 - GitHub
 
+#### Future Updates
+
+- Error handling files
+- Other cracking techniques
+- Speed up brute force functions
+- Update progress bar
+
 [Back To The Top](#Packer)
 
 ---
@@ -38,18 +45,29 @@ to better understand the importance of security. This Tool was designed for lear
 
 #### Installation
 
-`$ git clone https://github.com/kyreid/Packer`
+Clone repository
+`$ git clone https://github.com/USERNAME/REPOSITORY`
 
+Unpack the contents of the repository into a directory and run pipenv install (no package names needed). Pipenv will
+read the Pipfile and Pipfile.lock files for the project, create the virtual environment, and install all of the
+dependencies as needed.
+
+Inside Project folder run
 `pipenv shell`
 
+Run script
 `pipenv run python3 packer.py -h`
 
 #### Usage
 
-[tool in action](images/help.png)
-Figure 1: Display of help menu
+**Help Display**
 
-[]()
+![Help](images/help.png)
+
+**Outcome Display**
+
+![in Action](images/tool-in-action.png)
+
 ---
 
 ## References
