@@ -1,9 +1,8 @@
 #!/usr/bin/env python
 
 import pikepdf
-from tqdm import tqdm
 import zipfile2
-from stringcolor import *
+from tqdm import tqdm
 
 
 def dictionary_zip(dictionary, zfile):
@@ -29,9 +28,9 @@ def dictionary_zip(dictionary, zfile):
             except:
                 continue
             else:
-                print(cs(f"Password found: {word.decode().strip()}", "Green").bold())
+                print(f"Password found: {word.decode().strip()}")
                 exit(0)
-    print(cs("Password not found, try a different list", "Red").bold())
+    print("Password not found, try a different list")
 
 
 def dictionary_pdf(dictionary, pdf_file):
@@ -50,9 +49,9 @@ def dictionary_pdf(dictionary, pdf_file):
         try:
             with pikepdf.open(dictionary, password=password) as pdf:
                 # if password found exit loop
-                print(cs(f"password found: {password}", "Green").bold())
+                print(f"password found: {password}")
                 break
         except pikepdf._qpdf.PasswordError as e:
             # wrong password,  continue loop
             continue
-    print(cs("Password not found, try a different list", "Red").bold())
+    print("Password not found, try a different list")

@@ -1,15 +1,17 @@
 #!/usr/bin/env python
 
-import pikepdf
-from tqdm import tqdm
-import zipfile2
 import itertools
 import string
+
+import pikepdf
+import zipfile2
+from tqdm import tqdm
 
 
 def brute_force_combinations(combo_type):
     """
-    brute_force_combinations is a combination of all ascii values including lowercase, uppercase, digits and special characters
+    brute_force_combinations is a combination of all ascii values including lowercase, uppercase, digits and special
+    characters
 
     :param combo_type: value representing combo to use by users
     :type combo_type: int
@@ -47,7 +49,7 @@ def brute_force_combinations(combo_type):
         asci = string.ascii_lowercase + string.digits + string.punctuation
     if combo_type == 14:
         asci = string.ascii_uppercase + string.digits + string.punctuation
-    # qcombo of all four
+    # combo of all four
     if combo_type == 15:
         asci = string.ascii_letters + string.digits + string.punctuation
 
@@ -56,19 +58,16 @@ def brute_force_combinations(combo_type):
 
 def brute_force_zip(plock_file, password_length, asci):
     """
-    brute_force iterates through asci string list to determine the proper combination of ascii values to crack password
+    function uses brute-force techniques to gain access to password protected zip files
 
     :param plock_file: file with password protection
-    :type plock_file: string
-    :param password_length: possible length of password 
-    :type password_length: int
+    :param password_length: possible length of password
     :param asci: string combination of ascii values
-    :type asci: string
     """
     # initialize the Zipfile object
     zfile = zipfile2.ZipFile(plock_file)
     # iterates through all asci values and generates a progress bar showing completion process
-    for i in tqdm(range(1, (password_length+1))):
+    for i in tqdm(range(1, (password_length + 1))):
         for letter in itertools.product(asci, repeat=i):
             password = ''.join(letter)
             # if password is proper zip file password, will display, else continue
@@ -82,9 +81,15 @@ def brute_force_zip(plock_file, password_length, asci):
 
 
 def brute_force_pdf(plock_file, password_length, asci):
-
+    """
+    function uses brute-force techniques to gain access to password protected pdf files
+    :param plock_file: file with password protection
+    :param password_length: possible length of password
+    :param asci: string combination of ascii values
+    :return:
+    """
     # iterates through all asci values and generates a progress bar showing completion process
-    for i in tqdm(range(1,(password_length+1))):
+    for i in tqdm(range(1, (password_length + 1))):
         for letter in itertools.product(asci, repeat=i):
             password = ''.join(letter)
             # uses pikepdf to try and open password protected pdf file using brute force method

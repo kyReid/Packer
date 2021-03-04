@@ -1,8 +1,8 @@
 # Packer
 
-![Project Image](/images/passwordhacked.jpg)
+![Project Image](images/passwordhacked.jpg)
 
-> **scientia potentia est**. Knowledge is my power. Learning my tool. 
+> **If at first you don't succeed, try, try, try again.**
 
 ---
 
@@ -18,12 +18,14 @@
 
 ## Description
 
-Packer is a simple command-line program that lets the user utilize different forms of password cracking techniques in order to gian access to password protected files and folders. I created this knowledge to better my skills in python and to better understand the importance of security. This Tool is was designed for learning purposes only.
+Packer is a simple command-line program that lets the user utilize different forms of password cracking techniques in
+order to gian access to password-protected files and folders. I created this knowledge to better my skills in python and
+to better understand the importance of security. This Tool was designed for learning purposes only.
 
 #### Technologies
 
 - Python
-- Visual Studio Code
+- PyCharm
 - Markdown
 - Pipenv
 - GitHub
@@ -36,16 +38,18 @@ Packer is a simple command-line program that lets the user utilize different for
 
 #### Installation
 
-`$ git clone https://github.com/USERNAME/REPOSITORY`
+`$ git clone https://github.com/kyreid/Packer`
 
 `pipenv shell`
 
-`pipenv run python3 packer.py`
+`pipenv run python3 packer.py -h`
 
 #### Usage
 
-...
+[tool in action](images/help.png)
+Figure 1: Display of help menu
 
+[]()
 ---
 
 ## References
@@ -60,26 +64,6 @@ Packer is a simple command-line program that lets the user utilize different for
 ## License
 
 MIT License
-
-Copyright (c) [2017] [James Q Quick]
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
 
 [Back To The Top](#Packer)
 

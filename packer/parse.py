@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 
 import argparse
-from stringcolor import *
 
 
 def get_args():
@@ -12,7 +11,11 @@ def get_args():
     # options for brute force attack
     parser.add_argument('-b', '--brute', default=False, action='store_true',
                         help='a flag for using brute force techniques')
-    parser.add_argument('-c', dest='combo_type', type=int, help="1:lowercase 2:uppercase 3:letters 4:digits 5:specials 6:letters 7:lower digits 8:lower specials 9:upper digits 10:upper specials 11:letters digits 12:letters specials 13:lower digits specials 14:upper digits specials 15:letters digits specials")
+    parser.add_argument('-c', dest='combo_type', type=int, help="1:lowercase 2:uppercase 3:letters 4:digits "
+                                                                "5:specials 6:letters 7:lower digits 8:lower specials "
+                                                                "9:upper digits 10:upper specials 11:letters digits "
+                                                                "12:letters specials 13:lower digits specials "
+                                                                "14:upper digits specials 15:letters digits specials")
     parser.add_argument('-pl', dest='password_length',
                         type=int, help='length of password to brute force')
 
@@ -26,10 +29,10 @@ def get_args():
 
     # validate file input is a PDF or Zip file
     if not args.plock_file.lower().endswith(('.zip', '.pdf')):
-        parser.error(cs('File must be a PDF or ZIP file', "#ff0009").bold())
+        parser.error('File must be a PDF or ZIP file')
     # validate that wordlist is a txt file
     if args.wordlist is not None:
         if '.txt' not in args.wordlist:
-            parser.error(cs('Wordlist must be a txt file', "#ff0009").bold())
+            parser.error('Wordlist must be a txt file')
 
     return args
