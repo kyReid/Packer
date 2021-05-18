@@ -1,4 +1,4 @@
-# Packer
+# Password Cracker
 
 ![Project Image](images/passwordhacked.jpg)
 
@@ -18,7 +18,7 @@
 
 ## Description
 
-Packer is a simple command-line program that lets the user utilize different forms of password cracking techniques in
+This is a simple command-line program that lets the user utilize different forms of password cracking techniques in
 order to gian access to password-protected files and folders. I created this knowledge to better my skills in python and
 to better understand the importance of security. This Tool was designed for learning purposes only.
 
@@ -29,13 +29,6 @@ to better understand the importance of security. This Tool was designed for lear
 - Markdown
 - Pipenv
 - GitHub
-
-#### Future Updates
-
-- Error handling files
-- Other cracking techniques
-- Speed up brute force functions
-- Update progress bar
 
 [Back To The Top](#Packer)
 
