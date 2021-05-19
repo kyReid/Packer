@@ -30,8 +30,6 @@ to better understand the importance of security. This Tool was designed for lear
 - Pipenv
 - GitHub
 
-[Back To The Top](#Password Cracker)
-
 ---
 
 ## How To Use
@@ -68,20 +66,14 @@ Run script
 - Wikipedia - [Password Cracking](https://en.wikipedia.org/wiki/Password_cracking)
 - Guru99 - [How2](https://www.guru99.com/how-to-crack-password-of-an-application.html)
 
-[Back To The Top](#Password Cracker)
-
 ---
 
 ## License
 
 MIT License
 
-[Back To The Top](#Password Cracker)
-
 ---
 
 ## Author Info
 
 - GitHub - [KyReid](https://github.com/kyReid)
-
-[Back To The Top](#Password Cracker)
